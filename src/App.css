@@ -11,21 +11,23 @@ body {
 
 .App-header {
   background-color: #282c34;
-  padding: 20px;
-  color: white;
+  padding: 10px;
+  color: rgb(255, 255, 255);
   display: flex;
-  align-items: center;
+  flex-direction: column;  /* Alinea los elementos verticalmente */
+  align-items: center;     /* Centra los elementos horizontalmente */
 }
 
 .App-logo {
-  height: 50px;
-  margin-right: 10px;
+  height: 200px;
+  margin-bottom: 0%;  /* Ajusta este valor según sea necesario para agregar espacio */
 }
 
 nav ul {
   list-style: none;
   padding: 0;
   display: flex;
+  margin-top: 20px;  /* Ajusta este valor según sea necesario para agregar espacio */
 }
 
 nav li {
@@ -34,23 +36,10 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 253, 253);
   font-weight: bold;
 }
 
 main {
   padding: 20px;
-}
-
-section {
-  margin-bottom: 30px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 10px;
 }

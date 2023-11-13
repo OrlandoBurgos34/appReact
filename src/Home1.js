@@ -1,13 +1,13 @@
 // src/Home.js
 import React from 'react';
 
-function Home() {
+function Home1() {
   return (
-    <div>
+    <div style={{ color: 'black' }}>
       <h2>Bienvenido a la Página de Inicio</h2>
       <p>Esta es la página de inicio de nuestra aplicación.</p>
     </div>
   );
 }
 
-export default Home;
+export default Home1;
