@@ -10,9 +10,32 @@ body {
 }
 
 .App-header {
-  background-color: #072053;
+  background-color: #282c34;
   padding: 20px;
   color: white;
+  display: flex;
+  align-items: center;
+}
+
+.App-logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 main {

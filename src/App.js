@@ -1,46 +1,37 @@
 // src/App.js
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
+import Home from './home';
+import Cursos from './Cursos';
 
 function App() {
-  const cursos = [
-    {
-      id: 1,
-      titulo: 'Introducción a JavaScript',
-      instructor: 'Orlando Burgos',
-    },
-    {
-      id: 2,
-      titulo: 'Desarrollo Web con React',
-      instructor: 'Orlando Burgos',
-    },
-    {
-      id: 3,
-      titulo: 'Python para Principiantes',
-      instructor: 'Orlando Burgos',
-    },
-  ];
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Cursos de Programación</h1>
-      </header>
-      <main>
-        <section>
-          <h2>Lista de Cursos</h2>
-          <ul>
-            {cursos.map(curso => (
-              <li key={curso.id}>
-                <strong>{curso.titulo}</strong> - Instructor: {curso.instructor}
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <img src="/images/logo.png" alt="Logo" className="App-logo" />
+          <h1>Cursos de Programación</h1>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/Home">Home</Link>
               </li>
-            ))}
-          </ul>
-        </section>
-      </main>
-    </div>
+              <li>
+                <Link to="/cursos">Cursos</Link>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <Route path="/" exact component={Home} />
+          <Route path="/cursos" component={Cursos} />
+        </main>
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
 
