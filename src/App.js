@@ -2,9 +2,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
-import Home1 from './Home1';
-import Cursos from './Cursos';
-
+import Home from './Home';
+import Courses from './Courses';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -12,22 +12,26 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src="imgprograming.png" alt="Logo" className="App-logo" />
-          <center></center><h1>Cursos de Programación</h1>
+          <h1>Cursos de Programación</h1>
           <nav>
             <ul>
               <li>
-                <Link to="/Home1">Inicio</Link>
+                <Link to="/">Inicio</Link>
               </li>
               <li>
-                <Link to="/Cursos">Cursos</Link>
+                <Link to="/courses">Cursos</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contacto</Link>
               </li>
             </ul>
           </nav>
         </header>
         <main>
           <Routes>
-            <Route path="/Inicio" element={<Home1 />} />
-            <Route path="/Cursos" element={<Cursos />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
       </div>
@@ -36,5 +40,6 @@ function App() {
 }
 
 export default App;
+
 
 

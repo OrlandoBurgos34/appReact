@@ -1,8 +1,10 @@
 /* src/App.css */
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4;
 }
 
 .App {
@@ -11,35 +13,57 @@ body {
 
 .App-header {
   background-color: #282c34;
-  padding: 10px;
-  color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;  /* Alinea los elementos verticalmente */
-  align-items: center;     /* Centra los elementos horizontalmente */
+  padding: 20px;
+  color: white;
 }
 
 .App-logo {
-  height: 200px;
-  margin-bottom: 0%;  /* Ajusta este valor según sea necesario para agregar espacio */
+  height: 80px;
+  margin-bottom: 10px;
 }
 
 nav ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   display: flex;
-  margin-top: 20px;  /* Ajusta este valor según sea necesario para agregar espacio */
+  justify-content: center;
 }
 
 nav li {
-  margin-right: 20px;
+  margin: 0 20px;
 }
 
 nav a {
   text-decoration: none;
-  color: rgb(255, 253, 253);
+  color: white;
   font-weight: bold;
+  font-size: 16px;
 }
 
 main {
   padding: 20px;
+}
+
+/* Estilos para la página de cursos (Courses.js) */
+.Courses ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Courses li {
+  margin-bottom: 20px;
+}
+
+/* Estilos para la página de contacto (Contact.js) */
+.Contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Contact li {
+  margin-bottom: 10px;
+}
+
+.Contact strong {
+  margin-right: 10px;
 }

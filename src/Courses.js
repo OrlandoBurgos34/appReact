@@ -1,22 +1,22 @@
-// src/Cursos.js
+// src/Courses.js
 import React from 'react';
 
-function Cursos() {
+function Courses() {
   const cursos = [
     {
       id: 1,
       titulo: 'Introducción a JavaScript',
-      instructor: 'John Doe',
+      instructor: 'Sebastian Barcenas',
     },
     {
       id: 2,
       titulo: 'Desarrollo Web con React',
-      instructor: 'Jane Smith',
+      instructor: 'Santiago Barcenas',
     },
     {
       id: 3,
-      titulo: 'Python para Principiantes',
-      instructor: 'Bob Johnson',
+      titulo: 'Swift para Principiantes',
+      instructor: 'Orlando Burgos',
     },
   ];
 
@@ -34,4 +34,4 @@ function Cursos() {
   );
 }
 
-export default Cursos;
+export default Courses;

@@ -1,7 +1,7 @@
 // src/Home.js
 import React from 'react';
 
-function Home1() {
+function Home() {
   return (
     <div style={{ color: 'black' }}>
       <h2>Bienvenido a la Página de Inicio</h2>
@@ -10,4 +10,4 @@ function Home1() {
   );
 }
 
-export default Home1;
+export default Home;
